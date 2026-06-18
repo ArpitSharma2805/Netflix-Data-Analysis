@@ -40,6 +40,70 @@ Netflix Movies and TV Shows Dataset from Kaggle.
 - Top Genres
 - Content Added by Year
 
-## Author
+## Final Architecture
 
-Arpit Sharma
+                    NETFLIX ANALYSER
+
+┌───────────────────────────────────────┐
+│          Netflix Dataset (.csv)       │
+└───────────────────┬───────────────────┘
+                    │
+                    ▼
+┌───────────────────────────────────────┐
+│          Data Ingestion Layer         │
+│ • Load CSV using Pandas               │
+│ • Read and validate data              │
+└───────────────────┬───────────────────┘
+                    │
+                    ▼
+┌───────────────────────────────────────┐
+│         Data Cleaning Layer           │
+│ • Handle missing values               │
+│ • Remove duplicates                   │
+│ • Standardize formats                 │
+│ • Convert date columns                │
+└───────────────────┬───────────────────┘
+                    │
+                    ▼
+┌───────────────────────────────────────┐
+│      Feature Engineering Layer        │
+│ • Extract release year                │
+│ • Genre separation                    │
+│ • Content categorization              │
+│ • Country extraction                  │
+└───────────────────┬───────────────────┘
+                    │
+                    ▼
+┌───────────────────────────────────────┐
+│      Exploratory Data Analysis        │
+│ • Movies vs TV Shows                  │
+│ • Genre trends                        │
+│ • Country-wise analysis               │
+│ • Year-wise growth                    │
+│ • Ratings distribution                │
+└───────────────────┬───────────────────┘
+                    │
+                    ▼
+┌───────────────────────────────────────┐
+│        Visualization Engine           │
+│ • Bar Charts                          │
+│ • Pie Charts                          │
+│ • Line Graphs                         │
+│ • Heatmaps                            │
+└───────────────────┬───────────────────┘
+                    │
+                    ▼
+┌───────────────────────────────────────┐
+│         Insight Generation            │
+│ • Trend Identification                │
+│ • Content Distribution Insights       │
+│ • Business Recommendations            │
+└───────────────────┬───────────────────┘
+                    │
+                    ▼
+┌───────────────────────────────────────┐
+│             Final Output              │
+│ • Dashboard/Notebook                  │
+│ • Visual Reports                      │
+│ • Data-driven Conclusions             │
+└───────────────────────────────────────┘
